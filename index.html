@@ -4,74 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Programação</title>
+    <title>Formulário de Desenvolvimento Web</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-    <div>
-        <h1 id="titulo">Formulário de Desenvolvimento Web</h1>
-        <p id="subtitulo">Complete o formulário abaixo com suas informações!</p>
-        <br>
-    </div>
 
-    <form>
-        <fieldset class="grupo">
-            <div class="campo">
-                <label for="nome"><strong>Nome</strong></label>
-                <input type="text" name="nome" id="nome" required>
-            </div>
+    <div class="container">
+
+        <div class="superior">
+            <h1>Formulário de Desenvolvimento Web</h1>
+            <p>Complete o formulário abaixo com suas informações!</p>
+        </div>
+
+        <form>
             
-
-            <div class="campo">
-                <label for="sobrenome"><strong>Sobrenome</strong></label>
-                <input type="text" name="sobrenome" id="sobrenome" required>
+            <div class="formNome">
+                <label for="nome"><strong>Nome:</strong></label>
+                <input style="padding: 2px; border-radius: 5px;" type="text" name="nome" id="nome" required>
             </div>
-        </fieldset>
-    <br>
 
-        <div class="campo">
-            <label for="email"><strong>Email</strong></label>
-            <input type="email" name="email" id="email" required>
-        </div>
+            <div class="formSobrenome">   
+                <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                <input style="padding: 2px; border-radius: 5px;" type="text" name="sobrenome" id="sobrenome" required>
+            </div>  
 
-        <div class="campo">
-            <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
+            <div class="formEmail">
+                <label for="email"><strong>Email:</strong></label>
+                <input style="padding: 2px; border-radius: 5px;" type="email" name="email" id="email" required>
+            </div>
 
-            <label>
-                <input type="radio" name="devweb" value="fronted">Front-End
-            </label>
+            <div class="formQuestion">
+                <label><strong>Em que parte você desenvolve?</strong></label>
+            </div>    
 
-            <label> 
-                <input type="radio" name="devweb" value="backend">Back-End
-            </label>
+            <div class="formOptions">
+                <label>
+                    <input type="radio" name="devweb" value="fronted">Front-End
+                </label>
 
-            <label>  
-                <input type="radio" name="devweb" value="fullstack">FullStack
-            </label>
-        </div>
+                <label> 
+                    <input type="radio" name="devweb" value="backend">Back-End
+                </label>
 
-        <div class="campo">
-            <label for="senioridade"><strong>Senioridade:</strong></label>
-            <select id="senioridade">
-                <option selected disabled value="">Selecione</option>
-                <option>Júnior</option>
-                <option>Pleno</option>
-                <option>Sênior</option>
-            </select>
-        </div>
+                <label>  
+                    <input type="radio" name="devweb" value="fullstack">FullStack
+                </label>
+            </div>
 
-        <fieldset class="grupo">
-            <div id="check">
+            <div class="formSenioridade">
+                <label for="senioridade"><strong>Senioridade:</strong></label>
+            </div>  
+            
+            <div>
+                <select style="padding: 2px; border-radius: 5px;" id="senioridade">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Júnior</option>
+                    <option>Pleno</option>
+                    <option>Sênior</option>
+                </select>
+            </div>
+
+            <div class="formTec">
                 <label><strong>Selecione as tecnologias que você utiliza:</strong></label><br><br>
                 <input type="checkbox" name="tecnologia1" id="tecnologia1" value="HTML">
                 <label for="tecnologia1">HTML</label>
                 <input type="checkbox" name="tecnologia2" id="tecnologia2" value="CSS">
                 <label for="tecnologia2">CSS</label>
-                <input type="checkbox" name="tecnologia3" id="tecnologia3" value="C#">
-                <label for="tecnologia3">C#</label>
                 <input type="checkbox" name="tecnologia4" id="tecnologia4" value="JavaScript">
                 <label for="tecnologia4">JavaScript</label>
+                <input type="checkbox" name="tecnologia3" id="tecnologia3" value="C#">
+                <label for="tecnologia3">C#</label>
                 <input type="checkbox" name="tecnologia5" id="tecnologia5" value="Java">
                 <label for="tecnologia5">Java</label>
                 <input type="checkbox" name="tecnologia6" id="tecnologia6" value="Python">
@@ -79,15 +81,17 @@
                 <input type="checkbox" name="tecnologia7" id="tecnologia7" value="PHP">
                 <label for="tecnologia7">PHP</label>
             </div>
-        </fieldset>
 
-        <div class="campo">
-            <br>
-            <label><strong>Conte um pouco da sua experiência:</strong></label>
-            <textarea name="experiencia" id="experiencia" rows="6" style="width: 26em"></textarea>
-        </div>
+            <div class="formExp">
+                <br>
+                <label><strong>Conte um pouco da sua experiência:</strong></label>
+                <textarea name="experiencia" id="experiencia" rows="6" style="width: 26em"></textarea>
+            </div>
+            
+        </form> 
 
         <button class="botao" type="submit">Finalizar</button>
-    </form>    
+        
+    </div>   
 </body>
 </html>

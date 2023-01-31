@@ -3,105 +3,86 @@
     padding: 0;
 }
 
-#titulo{
-    font-family:sans-serif;
-    color:coral;
-    margin-left: 2%;
-}
-
-#subtitulo{
-    font-family: sans-serif;
-    color:coral;
-    margin-left: 10%;
-}
-
-#check{
-    display: inline-block;
-}
-
-fieldset{
-    border: 0;   
-}
-
 body{
-    background-color:blueviolet;
-    font-family:sans-serif;
-    font-size: 1em;
+    background-color: blueviolet;
+}
+
+.container{
+    text-align: center;
+}
+
+.superior{
+    margin-top: 3%;
     color: orange;
-    margin-left: 36%;
+    text-shadow: 0px 0px 4px black;
+}
+
+.formNome{
+   display: inline-grid;
+   margin-top: 2%;
+   color: orange;
+   text-shadow: 0px 0px 4px black;
+}
+
+.formSobrenome{
+    display: inline-grid;
+    color: orange;
+    text-shadow: 0px 0px 4px black;
+}
+
+.formEmail{
+    margin-top: 1%;
+    color: orange;
+    text-shadow: 0px 0px 4px black;
+}
+
+.formQuestion{
     margin-top: 2%;
-    justify-content: center;
-}
-
-input, select, textarea, button{
-    font-family: sans-serif;
-    font-size: 1em;
     color: orange;
-    border-radius: 5px;
+    text-shadow: 0px 0px 4px black;
 }
 
-.grupo:before, .grupo:after {
-    display: table;
-}
-
-.grupo::after{
-    clear: both;
-}
-
-.campo{
-    margin-bottom: 1em;
-}
-
-.campo label{
-    margin-bottom: 0.2em;
+.formOptions{
+    display: grid;
+    margin-top: 1%;
     color: orange;
-    display: block;
+    text-shadow: 0px 0px 4px black;
 }
 
-fieldset.grupo .campo{
-    float: left;
-    margin-right: 1em;
+.formSenioridade{
+    margin-top: 2%;
+    color: orange;
+    text-shadow: 0px 0px 4px black;
 }
 
-.campo input[type= "text"], .campo input[type= "email"], .campo select, .campo textarea{
-    padding: 0.2em;
-    border: 1px solid orange;
-    box-shadow: 2px 2px 2px rgb(68, 44, 1);
-    display: block;
+.formTec{
+    margin-top: 2%;
+    color: orange;
+    text-shadow: 0px 0px 4px black;
 }
 
-.campo select option{
-    padding-right: 1em;
-}
-
-.campo input:focus, .campo select:focus, .campo textarea:focus{
-    background: white;
+.formExp{
+    display: inline-grid;
+    margin-top: 2%;
+    color: orange;
+    text-shadow: 0px 0px 4px black;
 }
 
 .botao{
-    font-size: 1.2em;
-    background: orange;
-    border: 0;
-    margin-bottom: 1em;
-    color: white;
-    padding: 0.2em 0.6em;
-    box-shadow: 2px 2px 2px rgb(71, 47, 1);
-    text-shadow: 1px 1px 1px rgb(82, 53, 0);
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+    border: none;
+    margin-top: 2%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: orange;
 }
 
 .botao:hover{
-    background: rgb(243, 185, 79);
-    box-shadow: inset 2px 2px 2px rgb(69, 45, 1);
-    text-shadow: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: orange;
 }
 
-.botao, select{
-    cursor: pointer;
-}
+
 
  
